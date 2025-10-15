@@ -17,5 +17,22 @@
         "version": "V2"
       }
     }
+  },
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "maxTelemetryItemsPerSecond": 5
+      },
+      "enableLiveMetrics": true
+    },
+    "fileLoggingMode": "always",
+    "logLevel": {
+      "Function": "Information",
+      "Host.Results": "Information",
+      "Host.Aggregator": "Warning",
+      "Host.Triggers.DurableTask": "Information",
+      "default": "Information"
+    }
   }
 }
